@@ -1,8 +1,53 @@
+@font-face{font-family:'iconito';src:url("../fonts/icomoon.eot");src:url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.svg#icomoon") format('svg');font-weight:normal;font-style:normal}
+a{color:#dd4f24}
 body{background:#e8e8e8;color:#444;font-family:arial;font-size:16px}
-header{background:#444;color:#fff;padding:.5em;}
-header .logo{border-right:1px solid #22bce0;width:60px;}
+footer{background:#dd4f24;color:rgba(255,255,255,0.5);text-align:center;padding:1em 0;width:100%;}
+footer h3{font-size:14px;font-weight:normal;}
+footer h3 strong{display:block}
+footer h3 .mejor:before{content:"-"}
+footer h3 .mejor:after{content:"-"}
+header{background:#444;box-shadow:0 5px rgba(0,0,0,0.2);color:#fff;padding:.5em;position:relative;overflow:hidden;z-index:1;}
+header .logo{border-right:1px solid #22bce0;float:left;width:60px;}
 header .logo img{width:52px}
-header .titular{margin:0 80px 0 70px;}
+header .titular{margin:0 60px 0 70px;}
+header .titular .filtro{color:#22bce0;text-decoration:none;font-weight:bold;font-style:italic;font-size:14px}
+header .titular .publicar{background:#dd4f24;color:#fff;padding:.2em .5em;font-style:italic;text-decoration:none;text-shadow:1px 1px 0 #000;float:right;margin-right:10px;margin-top:-5px;}
+header .titular .publicar:before{display:inline-block;margin:0 3px;font-family:"iconito";content:"\e600"}
 header .titular .titulo{font-size:18px;font-weight:normal;margin:0;padding:0}
-.left{float:left}
-.right{float:right}
+header .usuario{position:absolute;right:10px;top:10px;}
+header .usuario .avatar{position:relative;margin:0 1.3em 0 0;z-index:2;}
+header .usuario .avatar img{width:50px;border-radius:50%}
+header .usuario .flechita{display:block;color:#fff;text-align:right;background:#dd4f24;position:absolute;width:50%;top:0;right:0;top:15px;padding:3px;text-decoration:none;}
+header .usuario .flechita:after{display:inline-block;text-shadow:1px 1px 0 #000;font-family:"iconito";content:"\e603";padding:3px}
+nav{background:#22bce0;border-left:15px solid #fff;position:relative;}
+nav:before{content:"";border-left:7px solid #fff;border-bottom:20px solid transparent;border-top:20px solid transparent;position:absolute;bottom:0;left:0}
+nav .menu{height:40px;line-height:40px;margin:0;overflow-x:auto;text-align:left;white-space:nowrap;padding:0;}
+nav .menu li{display:inline-block;}
+nav .menu li a{color:#fff;display:block;text-decoration:none;margin:0 .5em;padding:0 .2em}
+.posts{padding:.5em;}
+.posts .post{background:#fff;color:#7a7a7a;box-shadow:2px 2px 10px rgba(0,0,0,0.5);border-radius:0 0 .5em .5em;margin-bottom:.5em;}
+.posts .post .acciones{border-top:3px solid #22bce0;padding:.5em;overflow-x:hidden;}
+.posts .post .acciones .datos{float:right;}
+.posts .post .acciones .datos .comentarios{background:#7a7a7a;color:#fff;margin:0 1em 0 0;padding:2px 5px;text-decoration:none;border-radius:3px;position:relative;}
+.posts .post .acciones .datos .comentarios:after{content:"";position:absolute;left:10px;top:20px;padding:5px 0 0 0;border-top:5px solid #7a7a7a;border-left:5px solid transparent;border-right:5px solid transparent}
+.posts .post .acciones .datos .estrellita{text-decoration:none;}
+.posts .post .acciones .datos .estrellita:after{font-family:"iconito";color:#927c22;content:"\e601";text-shadow:1px}
+.posts .post .acciones .votos{float:left;}
+.posts .post .acciones .votos .down,.posts .post .acciones .votos .up{text-decoration:none;vertical-align:top;line-height:1.5em}
+.posts .post .acciones .votos .down{color:#f00;}
+.posts .post .acciones .votos .down:before{font-family:"iconito";content:"\e603";font-size:1.5em;top:5px;position:relative}
+.posts .post .acciones .votos .up{color:#008000;}
+.posts .post .acciones .votos .up:before{font-family:"iconito";content:"\e602";font-size:1.5em;top:5px;position:relative}
+.posts .post .descripcion{color:#7a7a7a;}
+.posts .post .descripcion .detalles{height:160px;margin-left:130px;}
+.posts .post .descripcion .detalles .autor{margin:.5em 0 2em 0}
+.posts .post .descripcion .detalles .tag{background:#00f;border-radius:.5em;color:#fff;padding:.2em .5em;text-decoration:none}
+.posts .post .descripcion .detalles .fecha{float:right;margin:0 1em 0 0}
+.posts .post .descripcion .detalles .titulo{color:#444;font-size:18px;font-style:italic;margin:0;padding:.5em .5em 0 0}
+.posts .post .descripcion .imagen{float:left;}
+.posts .post .descripcion .imagen img{width:120px;vertical-align:top;height:160px}
+@media screen and (min-width: 768px){.posts .post{margin:0 auto;width:48%;vertical-align:top;display:inline-block;margin-top:15px;}
+.posts .post:nth-child(odd){margin-right:2%}
+header .titular .publicar{padding-left:3em;position:relative;}
+header .titular .publicar:before{left:-10px;top:-10px;position:absolute;font-size:2.5em}
+}
