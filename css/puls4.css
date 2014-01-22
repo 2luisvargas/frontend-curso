@@ -1,6 +1,8 @@
 @font-face{font-family:'iconito';src:url("../fonts/icomoon.eot");src:url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.svg#icomoon") format('svg');font-weight:normal;font-style:normal}
 a{color:#dd4f24}
-body{background:#e8e8e8;color:#444;font-family:arial;font-size:16px}
+body{background:#e8e8e8;color:#444;font-family:arial;font-size:16px;}
+body #formulario{padding:1.5em;}
+body #formulario label{margin-left:1em}
 footer{background:#dd4f24;color:rgba(255,255,255,0.5);text-align:center;padding:1em 0;width:100%;}
 footer h3{font-size:14px;font-weight:normal;}
 footer h3 strong{display:block}
